@@ -56,7 +56,7 @@ while cv2.waitKey(1)<0 :
     resultImg,faceBoxes=highlightFace(faceNet,frame)
     if not faceBoxes:
         print("No face detected")
-
+#test
     for faceBox in faceBoxes:
         face=frame[max(0,faceBox[1]-padding):
                    min(faceBox[3]+padding,frame.shape[0]-1),max(0,faceBox[0]-padding)
